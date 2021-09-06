@@ -84,35 +84,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'aconfig.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-if not DEBUG:
-	DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.mysql',
-			'NAME': config('DB_NAME'),
-			'USER': config('DB_USER'),
-			'PASSWORD': config('DB_PASSWORD'),
-			'HOST': config('DB_HOST'),
-			'PORT': config('DB_PORT', cast=int),
-			# 'OPTIONS': {
-            #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-            # },
-		}
-	}
-
-else:
-	DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.sqlite3',
-			'NAME': str(BASE_DIR / 'db.sqlite3'),
-		}
-	}
-
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -166,22 +137,6 @@ if not DEBUG:
 else:
 	BASE_URL = 'http://127.0.0.1:8000'
 
-
-if not DEBUG:
-	EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-	EMAIL_HOST = config('EMAIL_HOST')
-	EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-	EMAIL_PORT = config('EMAIL_PORT', cast=int)
-	EMAIL_USE_SSL = config('EMAIL_USE_SSL', cast=bool)
-	EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-	DEFAULT_FROM_EMAIL = 'noreply@edukea.co.tz'
-	ADMIN_EMAIL = 'admin@edukea.co.tz'
-else:
-	DEFAULT_FROM_EMAIL = 'noreply@jaybla.com'
-	EMAIL_HOST_USER = 'noreply@jaybla.com'
-	EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-	EMAIL_FILE_PATH = str(BASE_DIR / 'sent_mails')
-	ADMIN_EMAIL = 'admin@jaybla.com'
 
 
 # Default primary key field type
