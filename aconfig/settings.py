@@ -15,7 +15,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 if not DEBUG:
-    ALLOWED_HOSTS = ['.demo.jaybla.com', 'demo.jaybla.com', 'www.demo.jaybla.com']
+    ALLOWED_HOSTS = ['.sitedemo.jaybla.com', 'sitedemo.jaybla.com', 'www.sitedemo.jaybla.com']
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SESSION_COOKIE_SECURE = True
