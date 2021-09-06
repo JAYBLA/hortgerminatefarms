@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 if not DEBUG:
-    ALLOWED_HOSTS = ['.jaybla.com', 'jaybla.com', 'www.jaybla.com']
+    ALLOWED_HOSTS = ['website.jaybla.com', 'website.jaybla.com', 'www.website.jaybla.com']
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SESSION_COOKIE_SECURE = True
@@ -154,7 +154,7 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 if not DEBUG:
-	STATIC_ROOT = '/home/jayblaco/public_html/static/'
+	STATIC_ROOT = '/home/jayblaco/public_html/website/static/'
 	MEDIA_URL = '/media/'
 	MEDIA_ROOT = [BASE_DIR / 'media']
 else:
