@@ -1,0 +1,6 @@
+@media (max-width:768px){
+    .site-branding img{
+        width: 80px !important;
+        height: auto;
+    }
+}
