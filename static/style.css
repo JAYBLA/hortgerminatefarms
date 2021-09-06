@@ -569,7 +569,7 @@ ul.slick-dots {
     display: block;
     width: 35px;
     margin-bottom: 9px;
-    background-color: #234536;
+    background-color: #fff;
 
 }
 
@@ -1079,12 +1079,12 @@ span.quantity {
 .wrd-slide-title h2 {
     font-size: 100px;
     line-height: 1.1;
-    color: #ffffff;
+    color: #234536;
 }
 
 .wrd-slider-content-text {
     font-size: 23px;
-    color: #ffffff;
+    color: #fff;
     margin-top: 30px;
 }
 
@@ -1688,7 +1688,7 @@ span.quantity {
 # Service CSS
  ====================================*/
 .wrd-button.wrd-service-page {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .service-section.service-page {
@@ -2366,7 +2366,7 @@ span.quantity {
 
 .wrd-gallery-content-wrapper:before {
     position: absolute;
-    background: rgba(129, 182, 12, .9);
+    background: rgba(35,69,54, .9);
     content: '';
     top: 0;
     left: 0;
@@ -2493,7 +2493,7 @@ span.quantity {
 }
 
 .project-slide-item:hover .title {
-    background: rgba(120, 184, 32, .7);
+    background: rgba(35,69,54, .7);
 }
 
 .wrd-project-button {
@@ -2510,7 +2510,7 @@ span.quantity {
 }
 
 .project-slide-item:hover .wrd-project-button {
-    background: #78b820;
+    background: rgba(35,69,54, .7);
 }
 
 .project-slide-item .title,
@@ -2688,7 +2688,7 @@ span.quantity {
 
 .team-section {
     background-color: #f5f5ef;
-    padding: 110px 0 75px;
+    padding: 80px 0 75px;
     position: relative;
 }
 
@@ -5354,7 +5354,7 @@ article .post-title a:hover, .team-member-details-wrapper .wrd-tab-subtitle, .wr
 .wrd-service-item:hover .wrd-service-box-content-wrapper,
 .wrd-gallery-content-wrapper:before, .wrd-service-two-item:hover .wrd-service-two-icon,
 .project-slide-item:hover .title {
-    background-color: rgba(129, 182, 12, .9);
+    background-color: rgba(35,69,54, .9);
 }
 
 .toggle-bg,

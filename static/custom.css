@@ -4,3 +4,15 @@
         height: auto;
     }
 }
+
+.main-menu-area{
+    background: linear-gradient(125deg, #faf9db 35%, #4bb74a 35%);
+}
+
+.main-menu-container a{
+    text-transform: capitalize !important;
+}
+
+.wrd-slide-title{
+    -webkit-text-stroke: 1px  #fff;
+}
