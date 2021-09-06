@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/jayblaco/jayblagroup/
-    - /bin/cp -R jayblagroup $DEPLOYPATH
+    - export DEPLOYPATH=/home/jayblaco/website/
+    - /bin/cp -R website $DEPLOYPATH
