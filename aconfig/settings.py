@@ -122,14 +122,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
 
 if not DEBUG:
-	STATIC_ROOT = '/home/jayblaco/public_html/static/'
-	MEDIA_URL = '/media/'
-	MEDIA_ROOT = [BASE_DIR / 'media']
+    STATICFILES_DIRS = [
+        BASE_DIR / "static",
+    ]
+
+    MEDIA_ROOT = '/home/jayblaco/website.jaybla.com/public_html/media'
+    STATIC_ROOT = '/home/jayblaco/website.jaybla.com/public_html/static'
 else:
-	MEDIA_ROOT = 'media/'
+    STATICFILES_DIRS = [
+        BASE_DIR / "static",
+    ]
+    MEDIA_ROOT = '/media'
+    STATIC_ROOT = '/static'
 	
 
 if not DEBUG:
